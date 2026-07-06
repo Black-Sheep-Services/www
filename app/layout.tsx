@@ -13,7 +13,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">{children}</body>
+      <body className="antialiased flex min-h-screen flex-col">
+        <div className="flex-1">{children}</div>
+        <footer className="border-t border-zinc-800 bg-zinc-950 px-6 py-6 text-center text-sm text-zinc-500">
+          © {new Date().getFullYear()} Black Sheep Services. Built by Jose Vilchis.
+        </footer>
+      </body>
     </html>
   );
 }
