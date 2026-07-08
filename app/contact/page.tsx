@@ -11,48 +11,48 @@ export default function ContactPage() {
   return (
     <main className="px-6 py-20">
       <div className="mx-auto max-w-2xl text-center">
-        <p className="text-sm font-medium uppercase tracking-widest text-zinc-400">
+        <p className="text-sm font-medium uppercase tracking-widest text-brand-tan-dark">
           Contact
         </p>
-        <h1 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
+        <h1 className="mt-4 text-4xl font-bold tracking-tight text-brand-cream sm:text-5xl">
           Get in Touch
         </h1>
-        <p className="mt-6 text-lg text-zinc-400">
+        <p className="mt-6 text-lg text-brand-tan">
           Questions about a service, a quote, or scheduling? Reach out any
           time.
         </p>
 
-        <div className="mt-12 space-y-4 rounded-2xl border border-zinc-800 bg-zinc-900/40 p-8">
+        <div className="mt-12 space-y-4 rounded-2xl border border-brand-brown bg-brand-charcoal/40 p-8">
           <div>
-            <p className="text-sm uppercase tracking-widest text-zinc-500">Phone</p>
+            <p className="text-sm uppercase tracking-widest text-brand-tan-dark">Phone</p>
             <a
               href="tel:6308867419"
-              className="mt-1 block text-xl font-semibold hover:text-zinc-300"
+              className="mt-1 block text-xl font-semibold text-brand-cream hover:text-brand-gold-light"
             >
               (630) 886-7419
             </a>
           </div>
           <div>
-            <p className="text-sm uppercase tracking-widest text-zinc-500">Email</p>
+            <p className="text-sm uppercase tracking-widest text-brand-tan-dark">Email</p>
             <a
               href="mailto:Sales@blacksheepservices.org"
-              className="mt-1 block text-xl font-semibold hover:text-zinc-300"
+              className="mt-1 block text-xl font-semibold text-brand-cream hover:text-brand-gold-light"
             >
               Sales@blacksheepservices.org
             </a>
           </div>
           <div>
-            <p className="text-sm uppercase tracking-widest text-zinc-500">
+            <p className="text-sm uppercase tracking-widest text-brand-tan-dark">
               Service Area
             </p>
-            <p className="mt-1 text-xl font-semibold">Illinois</p>
+            <p className="mt-1 text-xl font-semibold text-brand-cream">Illinois</p>
           </div>
         </div>
 
         <div className="mt-10">
           <Link
             href="/request-service"
-            className="inline-block rounded-full bg-zinc-100 px-6 py-3 text-sm font-semibold text-zinc-950 transition hover:bg-zinc-300"
+            className="inline-block rounded-full bg-brand-gold px-6 py-3 text-sm font-semibold text-brand-black transition hover:bg-brand-gold-light"
           >
             Request Service
           </Link>

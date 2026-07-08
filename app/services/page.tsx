@@ -39,13 +39,13 @@ export default function ServicesPage() {
   return (
     <main className="px-6 py-20">
       <div className="mx-auto max-w-4xl">
-        <p className="text-sm font-medium uppercase tracking-widest text-zinc-400">
+        <p className="text-sm font-medium uppercase tracking-widest text-brand-tan-dark">
           Services
         </p>
-        <h1 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
+        <h1 className="mt-4 text-4xl font-bold tracking-tight text-brand-cream sm:text-5xl">
           Cleaning Services
         </h1>
-        <p className="mt-6 max-w-2xl text-lg text-zinc-400">
+        <p className="mt-6 max-w-2xl text-lg text-brand-tan">
           Whatever the space, we have a service built for it. Here&apos;s what
           Black Sheep Services offers across Illinois.
         </p>
@@ -54,24 +54,26 @@ export default function ServicesPage() {
           {services.map((service) => (
             <div
               key={service.name}
-              className="rounded-2xl border border-zinc-800 bg-zinc-900/40 p-8"
+              className="rounded-2xl border border-brand-brown bg-brand-charcoal/40 p-8"
             >
-              <h2 className="text-xl font-semibold">{service.name}</h2>
-              <p className="mt-3 text-zinc-400">{service.description}</p>
+              <h2 className="text-xl font-semibold text-brand-gold">
+                {service.name}
+              </h2>
+              <p className="mt-3 text-brand-tan">{service.description}</p>
             </div>
           ))}
         </div>
 
-        <div className="mt-14 rounded-2xl border border-zinc-800 bg-zinc-950 p-8 text-center">
-          <h2 className="text-2xl font-bold tracking-tight">
+        <div className="mt-14 rounded-2xl border border-brand-brown bg-brand-black p-8 text-center">
+          <h2 className="text-2xl font-bold tracking-tight text-brand-cream">
             Not sure which service fits?
           </h2>
-          <p className="mt-3 text-zinc-400">
+          <p className="mt-3 text-brand-tan">
             Tell us about your space and we&apos;ll recommend a plan.
           </p>
           <Link
             href="/request-service"
-            className="mt-6 inline-block rounded-full bg-zinc-100 px-6 py-3 text-sm font-semibold text-zinc-950 transition hover:bg-zinc-300"
+            className="mt-6 inline-block rounded-full bg-brand-gold px-6 py-3 text-sm font-semibold text-brand-black transition hover:bg-brand-gold-light"
           >
             Request Service
           </Link>
